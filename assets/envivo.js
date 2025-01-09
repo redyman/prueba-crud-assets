@@ -1,1 +1,7 @@
-var horarios = { "programa": "prueba programa", "horario": "prueba horario"}
+const horario_envivo = {
+  "forzado": {
+    "estado": false,
+    "titulo": "En Vivo",
+    "label": "AUDIO"
+  }
+};
