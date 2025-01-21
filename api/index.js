@@ -19,11 +19,11 @@ app.use(express.json());
 
 // version del app
 app.get('/', (req, res) => {
-    res.json({ name: 'servicio-github-dynamic-live', version: '1.1.0' });
+    res.json({ name: 'servicio-github-dynamic-live by carlos', version: '1.1.0' });
 });
 
 /***************************************************/
-// competencia: El Comercio con playwright scraper //
+// competencia: El Comercio con playwright scraper test 2  //
 /***************************************************/
 
 // Aplicar las rutas live-web
