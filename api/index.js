@@ -19,7 +19,7 @@ app.use(express.json());
 
 // version del app
 app.get('/', (req, res) => {
-    res.json({ name: 'servicio-github-dynamic-live', version: '1.0.9' });
+    res.json({ name: 'servicio-github-dynamic-live', version: '1.1.0' });
 });
 
 /***************************************************/
