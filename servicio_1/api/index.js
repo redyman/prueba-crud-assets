@@ -1,4 +1,4 @@
-require("../config/database.js");
+//require("../config/database.js");
 const { PORT } = require("../config/variable.js");
 const express = require('express');
 const app = express();
@@ -19,7 +19,7 @@ app.use(express.json());
 
 // version del app
 app.get('/', (req, res) => {
-    res.json({ name: 'servicio-github-dynamic-live by carlos', version: '1.2.0' });
+    res.json({ name: 'Servicio 1', version: '1.2.0' });
 });
 
 /***************************************************/
