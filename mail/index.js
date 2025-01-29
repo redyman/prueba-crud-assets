@@ -1,7 +1,7 @@
 import express from 'express' //llamamos a Express
 import sendpulse from 'sendpulse-api'
 var app = express()               
-var port =  8080  //puerto
+var port =  27012  //puerto
 
 var API_USER_ID = "c79f7382012df0ea4c6fa37afec6374e";
 var API_SECRET = "164551af334e1ec93e1b3099afd93a88";
