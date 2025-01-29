@@ -19,7 +19,7 @@ app.use(express.json());
 
 // version del app
 app.get('/', (req, res) => {
-    res.json({ name: 'Servicio 2', version: '1.0.6 Eri vera' });
+    res.json({ name: 'Servicio 2', version: '1.0.7 Eri vera' });
 });
 
 /***************************************************/
