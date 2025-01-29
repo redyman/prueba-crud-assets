@@ -12,7 +12,7 @@ app.use(express.json())
 
 app.get('/', async function(req, res) {
   
-  res.json("mail API 4")   
+  res.json("mail API 5")   
 })
 app.post('/', function(req, res) {
    
