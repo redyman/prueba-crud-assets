@@ -59,15 +59,13 @@ app.post('/', function(req, res) {
             res.status(400).send({message:'Error en generación de token.'})
         }
     
-        var answerGetter = function(data) {
-            
-            const {error_code}=data;
-            if(!error_code){
-                res.status(400).send({data})
-            }else{
-                res.status(200).send({data})
+        var answerGetter = function(data) {            
+            if (data.result === true) { // Verifica el resultado directo
+                res.status(200).send({ data });
+            } else {
+                res.status(400).send({ data });
             }
-          }
+        };
           
           if(CC){
             var email = {
