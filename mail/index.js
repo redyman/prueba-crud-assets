@@ -1,5 +1,6 @@
 import express from 'express' //llamamos a Express
 import sendpulse from 'sendpulse-api'
+import cors from 'cors';
 var app = express()               
 var port =  27012  //puerto
 
@@ -10,9 +11,23 @@ var TOKEN_STORAGE = "/tmp/";
 //permite manejar post json
 app.use(express.json())
 
+// Configuración de CORS
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+  
+  // Manejar las solicitudes OPTIONS (preflight)
+  if (req.method === 'OPTIONS') {
+    return res.status(200).end();
+  }
+  
+  next();
+});
+
 app.get('/', async function(req, res) {
   
-  res.json("mail API 7")   
+  res.json("mail API 8")   
 })
 app.post('/', function(req, res) {
    
