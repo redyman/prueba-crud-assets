@@ -27,7 +27,7 @@ app.use((req, res, next) => {
 
 app.get('/', async function(req, res) {
   
-  res.json("mail API 2.0")   
+  res.json("mail API 2.1")   
 })
 app.post('/', function(req, res) {
    
